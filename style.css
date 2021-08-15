@@ -1,0 +1,484 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	background: white;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #eca7a6;
+}
+
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url(./Media/loading.gif) no-repeat center;
+	z-index: 999;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+#myBtn {
+	height: 4.5rem;
+	width: 4.2rem;
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 3.0rem; /* Place the button at the bottom of the page */
+	right: 3.0rem; /* Place the button 30rem from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: white; /* Set a background color */
+	color: #eca7a6; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: auto; /* Some padding */
+	border-radius: .4rem; /* Rounded corners */
+	font-size: 2.5rem; /* Increase font size */
+}
+
+#myBtn:hover {
+	color: white;
+	background-color: black;
+}
+
+
+
+
+
+
+/* NAVIGATION */
+
+.navbar {
+	display: flex;
+	z-index: 10;
+	background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	justify-content: space-between;
+}
+
+
+.header-area .navbar {
+	padding-left: 5rem;
+}
+
+.navbar .logo {
+	padding-top: 1rem;
+	width: 10.0rem;
+	cursor: pointer;
+}
+
+.navbar .nav-items {
+	display: flex;
+	align-items: center;
+	margin-right: 7.0rem;
+}
+
+.navbar .nav-items li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 2.0rem;
+}
+
+.navbar .nav-items li a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.navbar .nav-items li a:hover {
+	color: #eca7a6;
+	font-weight: bolder;
+}
+
+
+
+
+
+/* HOME */
+
+.container {
+	height: 100vh;
+	width: 100%;
+	background: url(./Media/home-bg.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.container .content {
+	width: 100%;
+	position: absolute;
+	top: 25%;
+}
+
+.container .content .left-col {
+	margin-left: 6.5%;
+}
+
+.container .content .left-col h1 {
+	font-size: 9.0rem;
+	color: white;
+	line-height: 10.0rem;
+	float: left;
+}
+
+.container .content .right-col {
+	float: right;
+	margin-right: 7%;
+	margin-top: 12.0rem;
+	display: flex;
+	align-items: center;
+}
+
+.container .content .right-col p {
+	font-size: 1.8rem;
+	color: #5f5f5f;
+	font-weight: bold;
+	margin-right: 1.5rem;
+}
+
+
+
+
+
+/* ABOUT */
+
+.about-area {
+	height: 100vh;
+	width: 100%;
+	background: url(./Media/bg-img.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.about-area .about-image > img {
+	padding-right: 15rem;
+	padding-top: 15rem;
+	width: 60rem;
+	float: right;
+}
+
+.about-area .about-title h2 > span {
+	padding-top: 15rem;
+	padding-bottom: 3rem;
+	padding-left: 2.5rem;
+	display: block;
+	font-weight: bold;
+	font-size: 5.0rem;
+	color: black;
+	letter-spacing: .2rem;
+}
+
+.about-area .about-title .paragraph > p {
+	font-size: 1.5rem;
+	padding-left: 2.5rem;
+	max-width: 45%;
+	padding-bottom: 2rem;
+	color: #5f5f5f;
+}
+
+.about-area .about-title a > button {
+	font-size: 1.5rem;
+	margin-left: 2.5rem;
+	border: .3rem solid;
+	padding: 0.5rem 0.5rem;
+	position: relative;
+	background-clip: padding-box;
+	background: white;
+	color: #eca7a6;
+	font-weight: bold;
+	border-width: .3rem;
+	border-radius: .4rem;
+	border-color: #eca7a6;
+	transition: background 0.1s ease;
+}
+
+.about-area .about-title a > button:hover {
+	background: #eca7a6;
+	color: white;
+	background-clip: padding-box;
+}
+
+/* FOOTER */
+
+.footer-area {
+	height: 100vh; 
+	width: 100%;
+	background: url(./Media/footer-img.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.footer-area h1 {
+	font-weight: normal;
+	font-size: 2.5rem;
+	letter-spacing: .4rem;
+	padding: 18.5rem 0 10.0rem;
+	color: white;
+	text-align: center;
+}
+
+.footer-area .social-media {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-area .social-media > a {
+	display: flex;
+	background: white;
+	height: 7.5rem;
+	width: 7.5rem;
+	margin: 0 1.5rem;
+	border-radius: .8rem;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: .6rem .6rem 1.0rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1.0rem -.1rem rgba(255, 255, 255, 0.5);
+
+	border: 1rem solid rgba(0, 0, 0, 0);
+	transition: transform 0.5s;
+}
+
+.footer-area .social-media a i {
+	font-size: 3.5rem;
+	color: #eca7a6;
+	transition: transform 0.5s;
+}
+
+.footer-area .social-media > a:hover {
+	box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0, 0, 0, 0.2), inset -.4rem -.4rem .6rem -.1rem rgba(255, 255, 255, 0.7),
+		-0.05rem -0.05rem 0rem -.1rem rgba(255, 255, 255, 1), 0.05rem 0.05rem 0rem rgba(0, 0, 0, 0.15),
+		0rem 1.2rem 1.0rem -1.0rem rgba(0, 0, 0, 0.05);
+
+	border: .1rem solid rgba(0, 0, 0, 0.01);
+	transform: translateY(.2rem);
+}
+
+.footer-area .social-media a:hover i {
+	transform: scale(0.90);
+}
+
+.footer-area .social-media a:hover .fa-instagram {
+	color: #f14843;
+}
+.footer-area .social-media a:hover .fa-facebook {
+	color: #3b5998;
+}
+.footer-area .social-media a:hover .fa-linkedin {
+	color: #0077b5;
+}
+.footer-area .social-media a:hover .fa-twitter {
+	color: #00acee;
+}
+.footer-area .social-media a:hover .fa-github {
+	color: #111;
+}
+
+.footer-area .para {
+	padding-top: 25rem;
+	font-size: large;
+	color: #5f5f5f;
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+	html{
+		font-size: 55%;
+	}
+	.about-area .about-image > img {
+		width: 50%;
+		padding-left: 4rem;
+	}
+
+	.footer-area .social-media {
+		padding-top: 41rem;
+	}
+}
+
+@media (max-width: 768px) {
+
+	html{
+		font-size: 70%;
+	}
+	.about-area .about-image > img {
+		width: 80%;
+	}
+
+	.about-area .about-title h2 > span {
+		padding-top: 50rem;
+	}
+
+	.about-area .about-title .paragraph > p {
+		max-width: fit-content;
+		padding-right: 2rem;
+	}
+
+	.footer-area .para {
+		font-size: 3rem;
+	}
+
+	.footer-area .social-media {
+		padding-top: 1.5rem;
+	}
+}
+
+@media (max-width: 540px) {
+
+	html{
+		font-size: 45%;
+	}
+	.about-area .about-image > img {
+		width: 80%;
+	}
+
+	.about-area .about-title .paragraph > p {
+		color: #5f5f5f;
+		padding: 0 3rem;
+	}
+
+	.about-area .about-title h2 > span {
+		padding-top: 55rem;
+	}
+
+	.about-area .about-title a > button {
+		margin-top: 2rem;
+	}
+}
+
+@media (max-width: 450px) {
+
+	html{
+		font-size: 45%;
+	}
+	.about-area .about-image > img {
+		width: 100%;
+		padding: 17rem 10rem;
+	}
+
+	.about-area .about-title h2 > span {
+		padding-left: 3.5rem;
+	}
+
+	.about-area .about-title .paragraph > p {
+		padding: 0rem 3rem;
+		max-width: fit-content;
+	}
+	
+	.about-area .about-title a > button {
+		margin-top: 2rem;
+	}
+
+	.footer-area .social-media {
+		padding-top: 9.5rem;
+	}
+
+	#icon{
+		width: 40%;
+	}
+}
+
+@media (max-width: 360px) {
+	html{
+		font-size: 40%;
+	}
+
+	.about-area .about-image > img {
+		padding: 15rem 10rem;
+	}
+
+	.about-area .about-title .paragraph > p {
+		padding-right: 5rem;
+		padding-left: 5rem;
+		max-width: fit-content;
+	}
+
+	.about-area .about-title h2 > span {
+		padding-left: 12rem;
+	}
+	
+	.about-area .about-title a > button {
+		margin-left: 21.5rem;
+	}
+
+	.footer-area .social-media {
+		padding-top: 14rem;
+	}
+
+	#icon{
+		width: 30%;
+	}
+}
+
+@media (max-width: 320px) {
+	html{
+		font-size: 40%;
+	}
+	.container .content .right-col {
+		float: right;
+		margin-right: 1%;
+		margin-top: 8rem;
+	}
+
+	.about-area .about-image > img {
+		width: 110%;
+		padding-left: 17rem;
+	}
+
+	.about-area .about-title h2 > span {
+		padding-left: 9rem;
+	}
+
+	.about-area .about-title a > button {
+		margin-left: 18.5rem;
+	}
+
+	.about-area .about-title .paragraph > p {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+
+	.footer-area h1 {
+		font-size: 2.25rem;
+	}
+	
+
+	.footer-area .social-media {
+		padding-top: 8.5rem;
+	}
+
+	#icon{
+		width: 30%;
+	}
+}
+
+
+
+@media (max-width: 280px) {
+	html{
+		font-size: 40%;
+	}
+}
