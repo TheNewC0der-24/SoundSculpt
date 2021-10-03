@@ -1,4 +1,3 @@
----
 <h1 align="center">🎶 Music-Website</h1>
 
 ## ABOUT
