@@ -1,3 +1,4 @@
+//play button thing 
 var mySong = document.getElementById("mySong");
 var icon = document.getElementById("icon")
 
@@ -5,10 +6,10 @@ var icon = document.getElementById("icon")
 icon.onclick = function () {
   if (mySong.paused) {
     mySong.play();
-    icon.src = "./Media/pause.png"
+    icon.src = "./Media/Image/pause.png"
   } else {
     mySong.pause();
-    icon.src = "./Media/play.png"
+    icon.src = "./Media/Image/play.png"
   }
 
 }
@@ -34,9 +35,22 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
+//trying to do the random thing but then realises that i can random 5 array together coz that will coz alot od confusing right but here it is the function that could do the random thing if i know how to use it better 
+/*var photoss = document.getElementsById('photos');
+window.onload = function () {
+            var images = ['https://cdn.discordapp.com/attachments/938107328434151475/1024184597145206855/Picsart_22-09-27_10-33-32-760.png', 'https://cdn.discordapp.com/attachments/938107328434151475/1024181542949502987/Picsart_22-09-27_10-20-00-284.png', 'https://cdn.discordapp.com/attachments/938107328434151475/1023892054612398080/570764_Girl_style_watercolor_illustration.jpg'];
+            var image = images[Math.floor(Math.random() * images.length)];
+            photoss.src = " "+image+"";
+}*/
 // PreLoader
 var loader = document.getElementById("loading");
 function preLoader() {
   loader.style.display = "none";
-}
+} 
+
+
+
+
+
+
+
