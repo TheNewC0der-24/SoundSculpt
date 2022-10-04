@@ -270,13 +270,35 @@ html{
 	font-weight: bold;
 	margin-right: 1.5rem;
 }
-.container .content .lolbutt a > button {
-	font-size: 1.5rem;
-  height: auto;
-	width: 20%;
+/* Songs button area */
+.Songs-button {
+	height: 100vh;
+	width: 100%;
+	background: url(./bg-songs.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.Songs-button .texto h2 > span {
+	padding-top: 15rem;
+	padding-bottom: 3rem;
+	padding-left: 3.0rem;
+	display: block;
+	font-weight: bold;
+	font-size: 5.0rem;
+	color: black;
+	letter-spacing: .2rem;
+}
+
+
+.Songs-button .container-songs .lolbutt a > button {
+	font-size: 2.0rem;
+  height: 10%%;
+	width: 40%;
   display: block;
 	border: .3rem solid;
-  justify-content: left;
+  justify-content: center;
   text-align: center;
 	padding: 0.5rem 0.5rem;
 	position: relative;
@@ -284,18 +306,18 @@ html{
 	background: white;
 	color: #eca7a6;
 	font-weight: bold;
-  margin-left: 5.6;
+  margin-left: auto;
   margin-right: auto;
 	border-width: .3rem;
 	border-radius: .4rem;
 	border-color: #eca7a6;
 	transition: background 0.1s ease;
 }
-.container .content .lolbutt a > button:not(:last-child) {
+.Songs-button .container-songs .lolbutt a > button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
 }
 
-.container .content .lolbutt a > button:hover {
+.Songs-button .container-songs .lolbutt a > button:hover {
 	background: #eca7a6;
 	color: white;
 	background-clip: padding-box;
