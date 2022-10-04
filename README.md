@@ -156,9 +156,9 @@ And last but not the least, thanks to w3 schools, geeksforgeek.
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: https://media.discordapp.net/attachments/895299400488849458/1026784121080528976/Screenshot_2022-10-04-14-42-22-91.png
-[html]: https://img.shields.io/badge/html-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[html]: https://img.shields.io/badge/html-000000?style=for-the-badge&logo=html&logoColor=white
 [Next-url]: https://html.com/
-[css]: https://img.shields.io/badge/css-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[css]: https://img.shields.io/badge/css-20232A?style=for-the-badge&logo=css&logoColor=61DAFB
 [React-url]: https://css.com/
-[javascript]: https://img.shields.io/badge/js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[javascript]: https://img.shields.io/badge/js-35495E?style=for-the-badge&logo=js&logoColor=4FC08D
 [Vue-url]: https://javascript.com/
