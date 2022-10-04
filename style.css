@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 /* CUSTOM SCROLLBAR */
@@ -23,7 +25,7 @@
 	width: 100%;
 	height: 100vh;
 	background: #fff
-	url(./Media/loading.gif) no-repeat center;
+	url(./loading.gif) no-repeat center;
 	z-index: 999;
 }
 
@@ -61,51 +63,166 @@ html{
 
 /* NAVIGATION */
 
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
 .navbar {
-	display: flex;
-	z-index: 10;
-	background: white;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	justify-content: space-between;
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 4.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 70px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 52px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #00FFFF;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.logo > img{
+  position: relative;
+  top: auto;
+  right: auto;
+  padding-top: 25%;/*28*/
+  /*height: 98%;98 86*/
+  height: auto%;
+  width: 50%;
+  justify-content: center;
+  text-align:center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #5f5f5f;
+}
+
+.navbar .paragraph > p {
+	font-size: 2.5rem;
+	padding-left: 2= .5rem;
+	max-width: 45%;
+	padding-bottom: 2rem;
+	color: Black;
 }
 
 
-.header-area .navbar {
-	padding-left: 5rem;
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
 }
 
-.navbar .logo {
-	padding-top: 1rem;
-	width: 10.0rem;
-	cursor: pointer;
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
 }
 
-.navbar .nav-items {
-	display: flex;
-	align-items: center;
-	margin-right: 7.0rem;
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
 }
 
-.navbar .nav-items li {
-	list-style: none;
-	display: inline-block;
-	margin: 0 2.0rem;
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
 }
 
-.navbar .nav-items li a {
-	text-decoration: none;
-	display: block;
-	color: black;
-	font-size: 1.5rem;
-	font-weight: bold;
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
 }
 
-.navbar .nav-items li a:hover {
-	color: #eca7a6;
-	font-weight: bolder;
+.nav-container input[type="checkbox"]:checked ~ .paragraph{
+  display: none;
 }
+
 
 
 
@@ -116,7 +233,7 @@ html{
 .container {
 	height: 100vh;
 	width: 100%;
-	background: url(./Media/home-bg.png);
+	background: url(./Media/Image/home-bg.png);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -153,6 +270,60 @@ html{
 	font-weight: bold;
 	margin-right: 1.5rem;
 }
+/* Songs button area */
+.Songs-button {
+	height: 100vh;
+	width: 100%;
+	background: url(./Media/Image/bg-songs.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.Songs-button .texto h2 > span {
+	padding-top: 15rem;
+	padding-bottom: 3rem;
+	padding-left: 3.0rem;
+	display: block;
+	font-weight: bold;
+	font-size: 5.0rem;
+	color: black;
+	letter-spacing: .2rem;
+}
+
+
+.Songs-button .container-songs .lolbutt a > button {
+	font-size: 2.0rem;
+  height: 10%%;
+	width: 40%;
+  display: block;
+	border: .3rem solid;
+  justify-content: center;
+  text-align: center;
+	padding: 0.5rem 0.5rem;
+	position: relative;
+	background-clip: padding-box;
+	background: white;
+	color: #eca7a6;
+	font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+	border-width: .3rem;
+	border-radius: .4rem;
+	border-color: #eca7a6;
+	transition: background 0.1s ease;
+}
+.Songs-button .container-songs .lolbutt a > button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.Songs-button .container-songs .lolbutt a > button:hover {
+	background: #eca7a6;
+	color: white;
+	background-clip: padding-box;
+}
+
+
 
 
 
@@ -163,7 +334,7 @@ html{
 .about-area {
 	height: 100vh;
 	width: 100%;
-	background: url(./Media/bg-img.png);
+	background: url(./Media/Image/bg-img.png);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -222,7 +393,7 @@ html{
 .footer-area {
 	height: 100vh; 
 	width: 100%;
-	background: url(./Media/footer-img.png);
+	background: url(./Media/Image/footer-img.png);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -293,12 +464,19 @@ html{
 	color: #111;
 }
 
-.footer-area .para {
-	padding-top: 25rem;
-	font-size: large;
-	color: #5f5f5f;
-	justify-content: center;
-	text-align: center;
+.footer-area .devimg > img {
+  position: relative;
+  top: auto;
+  right: auto;
+  padding-top: auto;/*28*/
+  /*height: 98%;98 86*/
+  height: 86%;
+  width: 100%;
+  justify-content: center;
+  text-align:center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
