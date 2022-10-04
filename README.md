@@ -129,7 +129,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@soonshine](https://twitter.com/soonshine) 
+Twitter - [@soonshine](https://twitter.com/soonshine) 
 
 Project Link: [https://github.com/TEDDY6969/Music-Website](https://github.com/TEDDY6969/Music-Website)
 
