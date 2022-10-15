@@ -13,7 +13,7 @@
   <p align="center">
     An awesome website to play songs!
     <br />
-    <a href="https://teddy6969.github.io/Music-Website/">View Demo</a>
+    <a href="musicalsmth.ga/">View Demo</a>
     ·
     <a href="https://github.com/TEDDY6969/Music-Website/issues">Report Bug</a>
     ·
