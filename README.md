@@ -13,7 +13,7 @@
   <p align="center">
     An awesome website to play songs!
     <br />
-    <a href="musicalsmth.ga/">View Demo</a>
+    <a href="https://musicalsmth.ga/">View Demo</a>
     ·
     <a href="https://github.com/TEDDY6969/Music-Website/issues">Report Bug</a>
     ·
@@ -132,6 +132,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Twitter - [@soonshine24](https://twitter.com/soonshine24) 
 
 Project Link: [https://github.com/TEDDY6969/Music-Website](https://github.com/TEDDY6969/Music-Website)
+
+Demo of project: [musicalsmth.ga](https://musicalsmth.ga/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
