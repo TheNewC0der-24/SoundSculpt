@@ -1,31 +1,22 @@
 <a name="readme-top"></a>
 
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/TEDDY6969/Music-Website">
-    <img src="Media/Image/logoicon.jpeg" alt="Logo" width="80" height="80" border-radius="50%">
-  </a>
-
-  <h3 align="center">Music Website</h3>
-
-  <p align="center">
-    An awesome website to play songs!
-    <br />
-    <a href="https://musicalsmth.ga/">View Demo</a>
+  <h3>SoundSculpt</h3>
+  <div>
+    <a href="https://thenewc0der-24.github.io/SoundSculpt/">View Demo</a>
     ·
-    <a href="https://github.com/TEDDY6969/Music-Website/issues">Report Bug</a>
+    <a href="https://github.com/TheNewC0der-24/SoundSculpt/issues">Report Bug</a>
     ·
-    <a href="https://github.com/TEDDY6969/Music-Website/issues">Request Feature</a>
-  </p>
+    <a href="https://github.com/TheNewC0der-24/SoundSculpt/issues/new">Request Feature</a>
+  </div>
 </div>
 
-
+![license-shield] [![LinkedIn][linkedin-shield]][linkedin-url]
+---
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
+<details open>
+  <summary><h2>Table of Contents</h2></summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -33,79 +24,46 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#features">Features</a></li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#preview">Preview</a>
       <ul>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#pwa">PWA</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#link">Link</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://media.discordapp.net/attachments/895299400488849458/1026784121080528976/Screenshot_2022-10-04-14-42-22-91.png)
-
-There are many websites on GitHub claiming to be the best in music webplayer catagory but one can't find any of them to be working as fine as this [music-website](https://teddy6969.github.io/Music-Website/).
-
-Here's why:
-* This webpage site full of aesthetic outlook
-* We don't fetch or import content from other websites. So, our website work smooth as butter
-* We added alot of comments that help you to learn the basics of the project so that you can make changes based on your own choice.
-
-
-Clone this git to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+An awesome website to play songs.
 
 ### Built With
+| ![HTML5][html] | ![CSS3][css] | ![JavaScript][javascript] |
+| --- | --- | --- |
 
-This section should list any major frameworks/libraries used to built this oz website
+## Features
+1. You can play a song.
+2. Can able to choose a song.
+3. You can download the selected song from about section.
+4. PWA(Progressive web app).
+5. Responsive Website.
 
-* [![HTML5][html]][Next-url]
-* [![CSS3][css]][React-url]
-* [![JavaScript][javascript]][Vue-url]
+## Preview
+![image](https://github.com/TheNewC0der-24/SoundSculpt/blob/master/Preview/Preview.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### PWA
+![image](https://github.com/TheNewC0der-24/SoundSculpt/blob/master/PWA/Lighthouse%20Report.png)
 
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This website is very flexible and easy to understand. 
-Just `clone` it in your ide and it's ready to run
-
-
-### Installation
-
-_Follow these steps if you are complete beginner._
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/TEDDY6969/Music-Website.git
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
-
 Contributions are what makes GitHub such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+
+> Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -113,54 +71,27 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Link
+```
+https://thenewc0der-24.github.io/SoundSculpt/
+```
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
 ## Contact
 
-Twitter - [@soonshine24](https://twitter.com/soonshine24) 
+Twitter - [@Bhavya06001699](https://twitter.com/Bhavya06001699)
 
-Project Link: [https://github.com/TEDDY6969/Music-Website](https://github.com/TEDDY6969/Music-Website)
+Portfolio Link: [Bhavya Khurana](https://bhavya-khurana.vercel.app/)
 
-Demo of project: [musicalsmth.ga](https://musicalsmth.ga/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-Firstly, I would like to thank [Bhavya Khurana](https://github.com/TheNewC0der-24) for all the help and writing the base of project.
-Secondly, I have downloaded music from Deezer website and right on the content goes to their respective owners.
-And last but not the least, thanks to w3 schools, geeksforgeek. 
-* [Bhavya Khurana ](https://github.com/TheNewC0der-24/)
-* [Deezer](https://www.deezer.com)
-* [TEDDY6969](https://github.com/TEDDY6969/)
+Blogs: [Hashnode](https://hashnode.com/@BhavyaKhurana)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: https://media.discordapp.net/attachments/895299400488849458/1026784121080528976/Screenshot_2022-10-04-14-42-22-91.png
-[html]: https://img.shields.io/badge/html-000000?style=for-the-badge&logo=html&logoColor=white
-[Next-url]: https://html.com/
-[css]: https://img.shields.io/badge/css-20232A?style=for-the-badge&logo=css&logoColor=61DAFB
-[React-url]: https://css.com/
-[javascript]: https://img.shields.io/badge/js-35495E?style=for-the-badge&logo=js&logoColor=4FC08D
-[Vue-url]: https://javascript.com/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0077b5
+[linkedin-url]: https://www.linkedin.com/in/bhavyakhurana24/
+[html]: https://img.shields.io/badge/html-e34c26?style=for-the-badge&logo=html&logoColor=white
+[css]: https://img.shields.io/badge/css-264de4?style=for-the-badge&logo=css&logoColor=white
+[javascript]: https://img.shields.io/badge/js-f7df1e?style=for-the-badge&logo=js&logoColor=4FC08D
