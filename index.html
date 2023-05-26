@@ -1,423 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="en">
- 
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e1313" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./public/apple-touch-icon.png">
 
+  <title id="title">SoundSculpt</title>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="twitter:site" content="website" />
-        <meta name="twitter:title" content="Musicalsmth" />
-        <meta name="twitter:description" content="This is a webplayer that plays songs" />
-        <meta name="twitter:image" content="./Media/Image/logoicon.jpeg" />
+  <!-- Import CSS File -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/responsive.css">
 
-        <meta property='og:title' content='Musicalsmth' />
-        <meta property='og:type' content="website" />
-        <meta property='og:description' content='This is a webpage which plays Songs' />
-        <meta property="og:image" content='./Media/Image/logoicon.jpeg' />
-        <meta name="theme-color" content="#F4C2C2" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Media/logohead.jpg" type="image/x-icon">
-    <title id="head">Musicalsmth</title>
-
-  
-  
-
-    <!-- Import CSS File -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Import Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
-<body onload="preLoader ()">
+<body onload="preLoader()">
 
-    <div id="loading"></div>
+  <div id="loading"></div>
+
   <!-- Go to Up button -->
+  <button onclick="topFunction()" id="moveTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
-  <!-- Burger Navbar  -->
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">SoundSculpt</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#play">Play Song</a></li>
+        <li><a href="#songs">Choose Song</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
 
-    <header class="header-area">
-        <div class="navbar">
-        <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>  
-          <div class="logo">
-            <img src="./Media/Image/logocenter.png" alt="logo" style="middle">
-            <!-- first page para-->
-          </div>
-          <div class="paragraph">
-            <p><b>Heyya! Glad to see ya' here. This is simply yet amazing webplayer site that plays random songs from Jatin's playlist. Go ahead and have fun :)</b></p> </div>
+  <div class="banner"></div>
 
-         <div class="menu-items">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#songs">Songs</a></li>
-           <li><a href="#about">about</a></li>
-            <li><a href="#contact">contact</a></li>
+  <!-- PLAY PAGE -->
+  <section class="play" id="play">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="left-col">
+              <h1 id="songName"> I Like Me Better </h1>
+              <h5>~<em id="songBy">Lauv</em></h5>
+            </div>
+            <div class="right-col">
+              <img src="./assets/Image/play.png" alt="play-button" id="icon">
+              <p>Click Here To Listen</p>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-
-
-    <!-- HOME PAGE -->
-  
-    
-
-    <section class="container" id="home">
-        <div class="content">
-            <div class="left-col">
-               <h1 id="mytext"> I <br> Like <br> Me <br> Better </h1>
-               
-     <div class="right-col">
-                <p>Click Here To Listen --»</p>
-                <img src="./Media/Image/play.png" alt="play-button" id="icon">
-             
-        </div>
-        </div>
-
-        <audio id="mySong">
-            <source src="./Media/Songs/I Like Me Better - Lauv.mp3" type="audio/mp3">
-        </audio>
-          </div>
-    </section>
-
-<!-- Songs button area -->
-  <section class="Songs-button" id="songs">
-        <div class="container-songs">
-          <div class="texto">
-          <h2> <span>Select The Songs </span></h2>
-          </div>
-  
-          <div class="lolbutt">
-            <br><br><br><br><a>
-                        <button type="button"> Khoya Sa</button>
-                    </a>
-            
-            <a>
-                        <button type="button" >I Like Me Better</button>
-            </a>
-            <a>
-                        <button type="button" >Mazaak</button>
-            </a>
-            <a>
-                        <button type="button" >Betty(Get Money)</button>
-            </a>
-            <a>
-                        <button type="button" >Mary On A Cross</button>
-            </a>
-            <a>
-                        <button type="button" >Baaraat</button>
-            </a>
-            <a>
-                        <button type="button" >Ishq Bulaava</button>
-            </a>
-            <a>
-                        <button type="button" >Katputli ke Dhage</button>
-            </a>
-            <a>
-                        <button type="button" >Tu/You</button>
-            </a>
-            <a>
-                        <button type="button" >Har Ek Pal</button>
-              </a>
-            <a>
-                        <button type="button" >Chand Baliyan</button>
-  </a>
-<a>
-                        <button type="button" >Aisay Kaisay</button>
-</a>
-             
-             <script>
-               const btns = document.querySelectorAll(".lolbutt button");
-    
-      
-        btns[0].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-          const icon = document.getElementById("icon");
-  const song = document.getElementById("mySong");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-          const hed = document.getElementById("head");
-          
- photo.src = "./Media/Image/khoya.jpg";
-    song.src = "./Media/Songs/khoya.mp3";
-          icon.src = "./Media/Image/play.png";
-
-    text.innerHTML = " Khoya <br> Sa";
-    hed.innerHTML = " Khoya Sa";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘khoya sa’ by singer, songwriter & composer, KASYAP who is ready to twirl up emotions and make you feel the jitters of love at first sight. ";
-        });
-               btns[1].addEventListener("click", function () {
-                 const photo1 = document.getElementById("photos");
-const icon = document.getElementById("icon");
-
-  const song1 = document.getElementById("mySong");
-  const text1 = document.getElementById("mytext");
-  const par1 = document.getElementById("para");
-                 const hed1 = document.getElementById("head");
-                 
-
-    
- 
-    photo1.src = "./Media/Image/about-img.png";
-icon.src = "./Media/Image/play.png";
-
-    song1.src = "./Media/Songs/I Like Me Better - Lauv.mp3";
-    text1.innerHTML = " I <br> Like <br> Me <br> Better";
-    hed1.innerHTML = " I Like Me Better";
-
-    par1.innerHTML = "“I Like Me Better” is a song recorded by American singer-songwriter Lauv. It was released on May 19, 2017, and is included on Lauv's compilation album I Met You When I Was 18, which was released on May 31, 2018. It has also been used in an Android Auto app commercial, in the trailer of Netflix's romantic comedy To All the Boys I've Loved Before, and in the fall ball episode of Netflix's comedy series The Expanding Universe of Ashley Garcia.";
-        });
-               btns[2].addEventListener("click", function () {
-                 const photo2 = document.getElementById("photos");
-                 const icon = document.getElementById("icon");
-  const song2 = document.getElementById("mySong");
-  const text2 = document.getElementById("mytext");
-  const par2 = document.getElementById("para");
-                 const hed2 = document.getElementById("head");
-
-    
- 
-    photo2.src = "./Media/Image/mazaak.jpg";
-                 icon.src = "./Media/Image/play.png";
-    song2.src = "./Media/Songs/mazaak.mp3";
-    text2.innerHTML = "Mazaak";
-    hed2.innerHTML = "Mazaak";
-
-    par2.innerHTML = "I dont think that I needs to explain much about this song just close your eyes and try to feel it but for now I am just gonna tell ya' for the context that how absurd is it that when we least expect love, it still finds us? And when it does, we hope that it isn’t a Mazaak, it isn’t a joke…";
-        });
-                       btns[3].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-                         const icon = document.getElementById("icon");
-  const song = document.getElementById("mySong");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-  const hed = document.getElementById("head");
-			
- 
-    photo.src = "./Media/Image/betty.jpeg";
-                         icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/betty.mp3";
-    text.innerHTML = " Betty <br> (Get Money)";
-                         hed.innerHTML = "Betty(Get Money)";
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Betty (Get Money)’ that is ready to make you feel the jitters. ";
-        });
-               btns[4].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-                 const icon = document.getElementById("icon");
-  const song = document.getElementById("mySong");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-const hed = document.getElementById("head");
-			
- 
-    photo.src = "./Media/Image/ghost.jpg";
-                 icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/ghost.mp3";
-    text.innerHTML = " Mary <br> On <br> A <br> Cross ";
-    hed.innerHTML = " Mary On A Cross ";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Mary On A Cross’ that is ready to twirl up emotions and make you feel the jitters of love. ";
-        });
-               btns[5].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-  const song = document.getElementById("mySong");
-                 const icon = document.getElementById("icon");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-  const hed = document.getElementById("head");
-			
- 
-    photo.src = "./Media/Image/baraat.jpeg";
-                 icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/baraat.mp3";
-    text.innerHTML = " Baaraat ";
-    hed.innerHTML = "Baaraat";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Baaraat’ that is ready to twirl up emotions and make you feel the jitters. ";
-        });
-               btns[6].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-  const song = document.getElementById("mySong");
-                 const icon = document.getElementById("icon");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-  const hed = document.getElementById("head");
-			
- 
-    photo.src = "./Media/Image/ishq.jpg";
-                 icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/ishq.mp3";
-    text.innerHTML = " Ishq <br> Bulaava";
-    hed.innerHTML = "Ishq Bulaava";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Ishq Bulaava’ that is ready to twirl up emotions and make you feel the jitters of love at first sight. ";
-        });
-btns[7].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-  const icon = document.getElementById("icon");
-  const song = document.getElementById("mySong");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-  const hed = document.getElementById("head");
-			
- 
-    photo.src = "./Media/Image/katputli.jpg";
-  icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/katputli.mp3";
-    text.innerHTML = " Katputli <br> Ke <br> Dhaage";
-    hed.innerHTML = "Katputli Ke Dhaage ";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Katputli Ke Dhaage’ that is ready to twirl up emotions and make you feel the jitters of love at first sight. ";
-        });
-               btns[8].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-                 const icon = document.getElementById("icon");
-  const song = document.getElementById("mySong");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-          const hed = document.getElementById("head");
-          
- photo.src = "./Media/Image/you.jpg";
-    song.src = "./Media/Songs/you.mp3";
-                 icon.src = "./Media/Image/play.png";
-
-    text.innerHTML = " Tu/You";
-    hed.innerHTML = "Tu/You";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Tu/You’ is ready to twirl up emotions and make you feel the jitters of love at first sight. ";
-        });
-               btns[9].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-  const song = document.getElementById("mySong");
-                 const icon = document.getElementById("icon");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-          const hed = document.getElementById("head");
-          
- photo.src = "./Media/Image/pal.jpg";
-                 icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/pal.mp3";
-
-    text.innerHTML = "Har <br> Ek <br> Pal";
-    hed.innerHTML = "Har Ek Pal";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Har Ek Pal’ is ready to twirl up emotions and make you feel the jitters of love at first sight. ";
-        });
-               btns[10].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-                 const icon = document.getElementById("icon");
-  const song = document.getElementById("mySong");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-          const hed = document.getElementById("head");
-          
- photo.src = "./Media/Image/chand.jpg";
-                 icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/chand.mp3";
-
-    text.innerHTML = "Chand <br> Baliyan";
-    hed.innerHTML = "Chand Baliyan";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Chand Baliyan’ is ready to twirl up emotions and make you feel the jitters of love at first sight. ";
-        });
-btns[11].addEventListener("click", function () {
-          const photo = document.getElementById("photos");
-  const icon = document.getElementById("icon");
-  const song = document.getElementById("mySong");
-  const text = document.getElementById("mytext");
-  const par = document.getElementById("para");
-          const hed = document.getElementById("head");
-          
- photo.src = "./Media/Image/aisay.jpeg";
-  icon.src = "./Media/Image/play.png";
-    song.src = "./Media/Songs/aisay.mp3";
-
-    text.innerHTML = "Aisay <br> Kaisay";
-    hed.innerHTML = "Aisay Kaisay";
-
-    par.innerHTML = "Music has the power to uplift your mood and also makes you feel  the warmth of emotions in the most memorable ways. Weaving magic once again, Label Day One announces the launch of ‘Aisay Kaisay’ is ready to twirl up emotions and make you feel the jitters of love at first sight. ";
-        });
-    window.addEventListener("click", function () {
-if (mySong.paused) {
-  const icon = document.getElementById("icon");
-const mySong = document.getElementById("mySong");
-  icon.src = "./Media/Image/play.png"
-}
-             });
-
-                                   </script>
-        </div>
-</div>
+      <audio id="song">
+        <source src="./assets/Songs/I Like Me Better - Lauv.mp3" type="audio/mp3">
+      </audio>
+    </div>
   </section>
-          
-    <!-- ABOUT SECTION -->
 
-    <section class="about-area" id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="about-image">
-                    <img src="./Media/Image/about-img.png" alt="About us" class="img-fluid" id="photos">
-                  
-                </div>
+  <!-- SELECT SONGS -->
+  <section class="songs" id="songs">
+    <div class="container">
+      <div class="songs-header">
+        <h2 class="title">Choose a song !!</h2>
+        <a class="play-song-btn" href="#play">Play Song</a>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn"> Khoya Sa</button>
+        <button type="button" class="btn">I Like Me Better</button>
+        <button type="button" class="btn">Mazaak</button>
+        <button type="button" class="btn">Betty (Get Money)</button>
+        <button type="button" class="btn">Mary On A Cross</button>
+        <button type="button" class="btn">Baaraat</button>
+        <button type="button" class="btn">Ishq Bulaava</button>
+        <button type="button" class="btn">Katputli ke Dhage</button>
+        <button type="button" class="btn">Tu/You</button>
+        <button type="button" class="btn">Har Ek Pal</button>
+        <button type="button" class="btn">Chand Baliyan</button>
+        <button type="button" class="btn">Aisay Kaisay</button>
+      </div>
+    </div>
+  </section>
 
-                <div class="about-title">
-                    <h2>
-                        <span>About Song...</span>
-                    </h2>
-                    <div class="paragraph">
-                        <p id="para">
-                            "I Like Me Better" is a song recorded by American singer-songwriter Lauv. It was released on
-                            May 19, 2017, and is included on Lauv's compilation album I Met You When I Was 18, which was
-                            released on May 31, 2018. It has also been used in an Android Auto app commercial, in the
-                            trailer of Netflix's romantic comedy To All the Boys I've Loved Before, and in the fall ball
-                            episode of Netflix's comedy series The Expanding Universe of Ashley Garcia.
-                        </p>
-                    
-                    </div>
-                    <a href="./Media/Songs/I Like Me Better - Lauv.mp3" download="İ like me better">
-                    
-                        <button type="button">Download Song</button>
-                    </a>
-                </div>
-            </div>
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "I Like Me Better" is a song recorded by American singer-songwriter Lauv. It was released on
+            May 19, 2017, and is included on Lauv's compilation album I Met You When I Was 18, which was
+            released on May 31, 2018. It has also been used in an Android Auto app commercial, in the
+            trailer of Netflix's romantic comedy To All the Boys I've Loved Before, and in the fall ball
+            episode of Netflix's comedy series The Expanding Universe of Ashley Garcia.
+          </p>
+          <a class="download-song" href="./assets/Songs/I Like Me Better - Lauv.mp3" id="download" download="Song.mp3">
+            Download Song
+          </a>
         </div>
-    </section>
-
-
-    <footer class="footer-area" id="contact">
-        <h1>CONTACT ME ON SOCIAL MEDIA</h1>
-      <!-- I haven't added my social links down here but you can do that by simple pasting your lines in href -->
-        <div class="social-media">
-            <a href="./Media/Image/prank.jpg" target="_blank"><i class="fab fa-instagram"></i></a>
-
-            <a href="./Media/Image/prank.jpg" target="_blank"><i class="fab fa-facebook"></i></a>
-
-            <a href="./Media/Image/prank.jpg" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-
-            <a href="https://twitter.com/soonshine24" target="_blank"><i class="fab fa-twitter"></i></a>
-
-            <a href="./Media/Image/prank.jpg" target="_blank"><i class="fab fa-github"></i></a>
-
+        <div class="image-container">
+          <img src="./assets/Image/ilikemebetter.png" alt="song-banner" id="banner">
         </div>
-        <p  class="devimg">
-            <img src="./Media/Image/devimg.png" alt="dev">
-              </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="title">Connect with me on Social media</h2>
+    <div class="social-media">
+      <a href="https://www.instagram.com/__cynophilist__._/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+      <a href="https://www.facebook.com/bhavya.khurana.399" target="_blank"><i class="fab fa-facebook"></i></a>
+
+      <a href="https://www.linkedin.com/in/bhavyakhurana24/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+      <a href="https://twitter.com/Bhavya06001699" target="_blank"><i class="fab fa-twitter"></i></a>
+
+      <a href="https://github.com/TheNewC0der-24" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <footer class="footer">
+      <p>© Design by <a href="https://bhavya-khurana.vercel.app/" target="_blank">Bhavya Khurana</a></p>
+      <p>Contributed by <a href="https://github.com/Jateeeen" target="_blank">Jatin</a></p>
     </footer>
-<!-- Import JS File -->
-    <script src="./script.js"> </script>
-  
+  </section>
+
+  <!-- Import JS File -->
+  <script src="./JS/script.js"></script>
+  <script src="./RegisterServiceWorker.js"></script>
+
 </body>
 
 </html>
