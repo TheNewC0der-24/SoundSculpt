@@ -1,0 +1,37 @@
+{
+    "name": "SoundSculpt",
+    "short_name": "SoundSculpt",
+    "description": "SoundSculpt is an awesome website to play songs!",
+    "start_url": ".",
+    "theme_color": "#0e1313",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "public/logo16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "public/logo32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "public/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "public/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "public/maskable.png",
+            "sizes": "400x400",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

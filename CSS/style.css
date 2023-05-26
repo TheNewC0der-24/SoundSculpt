@@ -52,7 +52,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #eca7a6;
+	background: #0e1313;
 }
 
 /* LOADER */
@@ -75,7 +75,7 @@ html {
 	width: 4.2rem;
 	display: none;
 	position: fixed;
-	bottom: 6rem;
+	bottom: 4rem;
 	right: 3rem;
 	z-index: 99;
 	border: none;
