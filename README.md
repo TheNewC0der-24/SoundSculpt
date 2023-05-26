@@ -84,7 +84,7 @@ Portfolio Link: [Bhavya Khurana](https://bhavya-khurana.vercel.app/)
 
 Blogs: [Hashnode](https://hashnode.com/@BhavyaKhurana)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Back to top ⬆️</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
